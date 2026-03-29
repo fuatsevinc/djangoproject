@@ -1,68 +1,95 @@
+# djangoproject – Django To-Do Application
 
+> A task management web application built with Django and Bootstrap, featuring full CRUD operations for to-do items.
 
-# Django Todo App Projesi
+---
 
+## About the Project
 
+This is a Django-based To-Do application with full CRUD functionality — users can add, update, and delete tasks. The project uses Bootstrap 4 for styling and python-decouple for environment variable management.
 
+---
 
+## Features
 
-## İçindekiler
-* [Genel Bilgiler](#genel-bilgiler)
-* [Teknolojiler](#teknolojiler)
-* [özellikleri](#özellikleri)
-* [Kururlrum](#kururlrum)
+- Add new to-do tasks
+- Update existing tasks
+- Delete tasks
+- Responsive UI with Bootstrap 4
+- Django admin panel for task management
+- Environment variable management with python-decouple
 
-## Genel Bilgiler
-Bu depo, bir Django Projesinin temel kurulumuna sahiptir. Django kullanarak bir projenin temel kurulumunu ayarlamak ve yapılandırmak zor olduğundan. Bu depoyu projeniz için klonlayabilir ve projeleriniz için kullanabilirsiniz.
+---
 
+## Technologies Used
 
-## Teknolojiler
-Proje bu teknolojiler ile oluşturulur:
-* Bootstrap 4
-* Python 3.10
-* python-decouple 3.6
-* Django 4.0
+| Technology | Version |
+|---|---|
+| Python | 3.10 |
+| Django | 4.0 |
+| Bootstrap | 4 |
+| python-decouple | 3.6 |
+| HTML5 / CSS3 | – |
 
-### Özellikleri
-1 Todo ekleme  <br>
-2 Todo güncelleme <br>
-3 Todo silme <br>
+---
 
+## Project Structure
 
-## Kururlrum
+```
+djangoproject/
+├── main/           # Core Django app (settings, urls)
+├── todo/           # To-do app (models, views, urls)
+├── templates/todo/ # HTML templates for todo app
+├── manage.py
+└── requirements.txt
+```
 
-Projeyi yerel olarak çalıştırmak için bu adımları izleyin
+---
 
-1. Depoyu klonla
-   ```sh
-   git clone https://github.com/tamaraiselvan/Base-django-project-Setup
+## Getting Started
+
+Follow these steps to run the project locally:
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/fuatsevinc/djangoproject
+   cd djangoproject
    ```
-2. Sanal bir ortam oluşturun
-   ```sh
-   python -m venv virtualenviron_name
+
+2. **Create a virtual environment**
+   ```bash
+   python -m venv venv
+   source venv/bin/activate  # On Windows: venv\Scripts\activate
    ```
-3. Ortamı etkinleştir
-   ```sh
-   virtualenviron_name\Scripts\activate
-   ```
-4. Requirements.txt dosyasından Requirements yükleyin
-   ```sh
+
+3. **Install dependencies**
+   ```bash
    pip install -r requirements.txt
    ```
-5. Gereksinimleri yükledikten sonra veritabanını taşıyın
-   ```sh
+
+4. **Apply migrations**
+   ```bash
    python manage.py migrate
    ```
-6. Taşıma işleminden sonra bir süper kullanıcı hesabı oluşturun
-   ```sh
+
+5. **Create a superuser (optional)**
+   ```bash
    python manage.py createsuperuser
    ```
-7. Sunucuyu sisteminizde yerel olarak çalıştırın
-   ```sh
+
+6. **Run the development server**
+   ```bash
    python manage.py runserver
    ```
-8. Tarayıcınızı açın ve yazın
-   ```sh
-   http://127.0.0.1:8000/
-   ```
 
+7. Open your browser and visit: `http://127.0.0.1:8000/`
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+Developed by [fuatsevinc](https://github.com/fuatsevinc)
